@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react";
+import type { FormEvent } from 'react'
 import {
-    FormEvent,
   useCallback,
   useLayoutEffect,
   useRef,
