@@ -10,7 +10,6 @@ import { ProfileImage } from "~/components/ProfileImage";
 import { InfiniteTweetList } from "~/components/InfiniteTweetList";
 import { Button } from "~/components/Button";
 import { useSession } from "next-auth/react";
-import { count } from "console";
 
 const ProfilePage: NextPage<InferGetStaticPropsType<GetStaticProps>> = ({id}) => {
     const {data: profile} = api.profile.getById.useQuery({id})
